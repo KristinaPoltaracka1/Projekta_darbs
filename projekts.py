@@ -140,4 +140,21 @@ for produkt in range(len(info_list)):
 
         for prod in range(len(s)):    
             time.sleep(1)
+            find = driver.find_element(By.XPATH, '//*[@id="fti-search"]') 
+            find.clear()             
+            time.sleep(1) 
+             
+            find.send_keys(str(product_name))             
+            time.sleep(1) 
+ 
+            find.send_keys(Keys.ENTER)             
+            time.sleep(1) 
+            
+            possible_product2 = driver.find_element (By.ID, 'fti-product-title-category-page-0') 
+            possible_product2.click()             
+            time.sleep(1) 
+            
+            find = driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/div/div[3]/div/div[1]/div[1]/div[2]/div[2]/h1')   
+            x1=find.text              
+            time.sleep(1) 
 
