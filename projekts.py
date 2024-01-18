@@ -101,3 +101,20 @@ for produkt in range(len(info_list)):
                         else:
                             break
                     time.sleep(10)
+
+find = driver.find_element(By.XPATH, '/html/body/header/div[2]/a/div[1]/span')   
+y=find.text 
+time.sleep(3) 
+ 
+c=y.rstrip()   
+d=c[0:len(c)]   
+e=d.replace(",",".")   
+f=e.replace("€","")   
+cena_rimi=float(f)  
+
+
+
+# -----------------------------------------------------------------------------------------------------------------------
+
+
+
