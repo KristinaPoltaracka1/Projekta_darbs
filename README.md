@@ -1,6 +1,7 @@
 # Projekta_darbs
 ## Produktu cenu salīdzināšana dažādos veikalos pēc Excel faila. 
-Datorsistēmas kurss, 15. grupa. Autori: Kristina Poltaracka (231RDB084), Karolīna Buceneka (231RDB003), Stanislava Shulzhenko (231RDB330)
+*Datorsistēmas kurss, 15. grupa. Autori: Kristina Poltaracka (231RDB084), Karolīna Buceneka (231RDB003), Stanislava Shulzhenko (231RDB330)*
+
 
 ### Projekta mērķis un tā darbība:
   Projekta darba galvenais mērķis ir izstrādāt programmu, kas veic efektīvu un precīzu produktu salīdzinājumu, sniedzot lietotājam informāciju par izdevīgākajiem un ekonomiski pieņemamākajiem produktu iegādes veidiem. Šajā analīzē tiek apskatīti divi no populārākajiem un biežāk apmeklētajiem veikaliem - Maxima un Rimi.
@@ -10,6 +11,7 @@ Datorsistēmas kurss, 15. grupa. Autori: Kristina Poltaracka (231RDB084), Karol�
   Pēc tam programma veic līdzīgu procesu ar Maxima (Barbora) interneta veikalu, taču, lai pievienotu preci, programma atceras preces cenu un tās daudzumu un pēc tam visu saskaita. Kad abiem veikaliem ir pievienotas visu nepieciešamo preci, programma radā kopējo summu, kuru lietotājam būtu jāsamaksā katrā veikalā. Beigās, izvadot informāciju terminālī, programma sniedz skaidru atbildi par to, kurā veikalā (Maximā vai Rimī) iegāde būtu izdevīgāka, piedāvājot lietotājam praktisku orientēšanās punktu iepirkuma izvēlē.
 
   Šī programma piedāvā lietotājiem ērtu un ātru veidu, kā salīdzināt un izvēlēties optimālo pirkumu vietu, ietaupot gan laiku, gan resursus.
+
 
 ### Izmantotās bibliotēkas:
   Selenium – Šī bibliotēka sniedz iespēju automatizēti mijiedarboties ar tīmekļa vietnēm, izmantojot Python programmu. Tas ir noderīgi strādājot ar datu iegūšanai no vietnēm vai darbību veikšanai tīmekļa formās. 
