@@ -1,6 +1,6 @@
 # Projekta_darbs
 ## Produktu cenu salīdzināšana dažādos veikalos pēc Excel faila. 
-Datorsistēmas kurss, 15. grupa. Autori: Kristina Poltaracka (231RDB084), Karolīna Buceneka (231RDB003), Stanislava Shulzhenko (2310RDB330)
+Datorsistēmas kurss, 15. grupa. Autori: Kristina Poltaracka (231RDB084), Karolīna Buceneka (231RDB003), Stanislava Shulzhenko (231RDB330)
 
 ### Projekta mērķis un tā darbība:
   Projekta darba galvenais mērķis ir izstrādāt programmu, kas veic efektīvu un precīzu produktu salīdzinājumu, sniedzot lietotājam informāciju par izdevīgākajiem un ekonomiski pieņemamākajiem produktu iegādes veidiem. Šajā analīzē tiek apskatīti divi no populārākajiem un biežāk apmeklētajiem veikaliem - Maxima un Rimi.
