@@ -27,8 +27,7 @@ for produkt in range(len(info_list)):
         product_name=info_list[produkt][0]  
         product_amount=info_list[produkt][2]  
         match=True  
-        s.append(product_name)  
-        print(s) 
+        s.append(product_name)
  
              
         for pro in range(len(s)):  
