@@ -140,6 +140,7 @@ for produkt in range(len(info_list)):
 
         for prod in range(len(s)):    
             time.sleep(1)
+            
             find = driver.find_element(By.XPATH, '//*[@id="fti-search"]') 
             find.clear()             
             time.sleep(1) 
@@ -158,3 +159,45 @@ for produkt in range(len(info_list)):
             x1=find.text              
             time.sleep(1) 
 
+            if product_name.lower() in str(x1.lower()):            
+                find = driver.find_element(By.XPATH, '//*[@id="fti-product-info-price"]/div/div[2]/div/span')   
+                y2=find.text 
+                y_norm=y2[1:]+y2[0]  
+
+                time.sleep(1) 
+                c2=y2.rstrip()   
+                d2=c2[0:len(c2)]   
+                e2=d2.replace(",", ".")   
+                f2=e2.replace("€", "")   
+                g2=float(f2)
+                skaits = info_list[produkt][2]
+                g3 = float(g2*skaits)
+                cena_maxima_l.append(g3)
+
+cena_maxima1 = round((sum(cena_maxima_l)), 2)
+cena_maxima2 = str(cena_maxima1)
+cena_maxima3 = cena_maxima2.replace(".", ",")
+
+
+print("Rimi: ", y.strip())
+print("Maxima: ", cena_maxima3, "€")
+
+
+cena_maxima = float(sum(cena_maxima_l))
+
+if cena_maxima < cena_rimi: 
+    difer = round(cena_rimi - cena_maxima, 2)
+    starp = str(difer) 
+    starpiba = starp.replace(".", ",")
+    print(starpiba + " €") 
+    print("Maxima ir izdevīgāk") 
+
+elif cena_rimi < g2: 
+    difer2 = round(cena_maxima - cena_rimi, 2) 
+    starp2 = str(difer2) 
+    starpiba2 = starp2.replace(".", ",")
+    print(starpiba2 + " €") 
+    print("Rimi ir izdevīgāk") 
+
+else: 
+    print("Vienāda cena")
