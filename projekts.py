@@ -18,3 +18,26 @@ s=[]
 fails = pandas.read_excel("Produkti.xlsx", sheet_name="Sheet1")  
 info_list = fails.values.tolist() 
 match=False 
+
+for produkt in range(len(info_list)):  
+    d=info_list[produkt][1]  
+    s.clear()    
+ 
+    if d == "x":  
+        product_name=info_list[produkt][0]  
+        product_amount=info_list[produkt][2]  
+        match=True  
+        s.append(product_name)  
+        print(s) 
+ 
+             
+        for pro in range(len(s)):  
+            time.sleep(1)  
+ 
+                 
+            find = driver.find_element(By.ID, "search-input")  
+            find.clear()  
+            time.sleep(1)  
+     
+            find.send_keys(str(product_name))  
+            time.sleep(2) 
