@@ -118,3 +118,26 @@ cena_rimi=float(f)
 
 
 
+cena_maxima_l=[]
+url2 = "https://www.barbora.lv/" 
+driver.get(url2) 
+time.sleep(2) 
+accept_cookies = driver.find_element(By.ID, "CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll") 
+accept_cookies.click() 
+
+fails = pandas.read_excel("Produkti.xlsx", sheet_name="Sheet1")  
+info_list = fails.values.tolist() 
+match=False 
+
+for produkt in range(len(info_list)):
+    c=info_list[produkt][1]
+    s.clear()
+
+    if c == "x":
+        product_name=info_list[produkt][0]
+        match=True
+        s.append(product_name)
+
+        for prod in range(len(s)):    
+            time.sleep(1)
+
