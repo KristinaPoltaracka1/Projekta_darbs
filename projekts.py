@@ -45,7 +45,6 @@ for produkt in range(len(info_list)):
  
             search_button= driver.find_element(By.XPATH, "/html/body/header/div[2]/div[3]/div[1]/form/label/div/button") 
             search_button.click() 
-#find.send_keys(Keys.ENTER) 
  
             time.sleep(3) 
  
@@ -60,8 +59,6 @@ for produkt in range(len(info_list)):
  
             time.sleep(3) 
  
-#if x.lower()==product_name.lower():  
-#if product_name.lower() in str(x.lower()): 
             if product_name.lower() in str(x.lower()): 
                 add_to_cart = driver.find_element(By.XPATH, '//*[@id="main"]/section/div[1]/div/div[2]/section/div/div/div[2]/div[2]/form[1]/button') 
                 add_to_cart.click()  
